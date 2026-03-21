@@ -1,25 +1,41 @@
 <div class="register-container">
+  
   <div class="register-header">
     <h2>Register</h2>
   </div>
+
   <div class="register-form">
-<form (ngSubmit)="onRegister()">
-  <div class="input-name">
-  <label >Name:</label>
-  <input type="text" placeholder="Name" [(ngModel)]="name" name="name" required />
+
+    <form (ngSubmit)="onRegister()">
+
+      <div class="input-name">
+        <label>Name:</label>
+        <input type="text" placeholder="Name" [(ngModel)]="name" name="name" required />
+      </div>
+
+      <div class="input-email">
+        <label>Email:</label>
+        <input type="email" placeholder="Email" [(ngModel)]="email" name="email" required />
+      </div>
+
+      <div class="input-password">
+        <label>Password:</label>
+        <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required />
+      </div>
+
+      <div class="input-password">
+        <label>Confirm Password:</label>
+        <input type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword" name="confirmPassword"
+          required />
+      </div>
+
+      <div class="register-btn">
+        <button type="submit">Register</button>
+        <button type="button" (click)="goToLogin()">Already have an account?</button>
+      </div>
+
+    </form>
+    
   </div>
-  <div class="input-email">
-  <label>Email:</label>
-  <input type="email" placeholder="Email" [(ngModel)]="email" name="email" required />
-  </div>
-  <div class="input-password">
-  <label>Password:</label>
-  <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required />
-  </div>
-  <div class="register-btn">
-  <button type="submit">Register</button>
-  <button type="button" (click)="goToLogin()">Already have an account?</button>
-  </div>
-</form>
-</div>
+
 </div>
