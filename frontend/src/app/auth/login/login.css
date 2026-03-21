@@ -1,0 +1,58 @@
+:host {
+  flex: 1; /* 🔥 fills available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .login-container {
+  background-color: aqua;
+  border: black solid 1px;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+    flex-direction: row;
+} */
+
+.login-container {
+  display: flex;          /* make it a flex container */
+  flex-direction: column;    /* arrange children horizontally */
+  /* justify-content: center; optional: spacing between header and form */
+  align-items: center;    /* optional: vertical alignment */
+  gap: 20px;              /* optional: spacing between header and form */
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: aqua;
+  height: 500px;
+    width: 600px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    /* gap: 100px; */
+    justify-content: center;
+    align-items: center;
+
+}
+.input-email,.input-password{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: larger;
+}
+.login-btn{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 20px;
+}
+button{
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+input{
+    padding: 10px 30px;
+    border-radius: 5px;
+}

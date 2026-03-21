@@ -1,0 +1,40 @@
+:host{
+    flex: 1; /* 🔥 fills available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-container{
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+.input-name,.input-email,.input-password{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: larger;
+    gap: 20px;
+}
+.register-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+button{
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+input{
+    padding: 10px 30px;
+    border-radius: 5px;
+}
