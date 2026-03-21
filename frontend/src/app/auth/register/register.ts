@@ -19,10 +19,15 @@ export class Register {
 
   onRegister() {
     const user = { name: this.name, email: this.email, password: this.password };
+    if(!this.name || !this.email || !this.password) {
+      alert('Please fill in all fields!');
+      return;
+    }
     this.http.post('http://localhost:8080/api/register', user).subscribe({
       next: (response) => {
         console.log('Registration successful:', response);
         alert('Registration successful!');
+        this.router.navigate(['/login']); // Redirect to login page on success
       },
       error: (error) => {
         console.error('Registration failed:', error);

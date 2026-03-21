@@ -1,0 +1,11 @@
+:host{
+    flex: 1;
+}
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    height: 100%;
+    width: 100%;
+}

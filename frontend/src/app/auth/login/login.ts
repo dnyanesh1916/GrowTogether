@@ -25,6 +25,7 @@ export class Login {
       error: (error) => {
         console.error('Login failed:', error);
         alert('Login failed!');
+        this.router.navigate(['/home']); // Redirect to login page on failure
       }
     });
   }
