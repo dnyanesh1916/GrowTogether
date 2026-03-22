@@ -26,7 +26,7 @@ public class RegisterController {
 
     @PostMapping("/register")
 //    ResponseEntity<?> registerUser(@Valid @RequestBody RegisterDto registerDto) {
-    ResponseEntity<?> registerUser( @RequestBody RegisterDto registerDto) {
+    ResponseEntity<?> registerUser(@Valid @RequestBody RegisterDto registerDto) {
 
         // Logic to save the user details to the database
         // For now, we will just return the received register object
@@ -42,7 +42,10 @@ public class RegisterController {
             register.setName(registerDto.getName());
             register.setPassword(registerDto.getPassword());
             register.setConfirmPassword(registerDto.getConfirmPassword());
-
+            register.setGender(registerDto.getGender());
+            register.setQualification(registerDto.getQualification());
+            register.setDob(registerDto.getDob());
+            
             return ResponseEntity.status(200).body(registerRepo.save(register));
 
         } catch (Exception e) {

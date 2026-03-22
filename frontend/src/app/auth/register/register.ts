@@ -16,7 +16,9 @@ export class Register {
   email = '';
   password = '';
   confirmPassword = '';
-
+  qualification = '';
+  gender = '';
+  dob = '';
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -36,7 +38,8 @@ validateEmail(email: string): boolean {
 
   onRegister() {
 
-    const user = { name: this.name, email: this.email, password: this.password , confirmPassword: this.confirmPassword };
+    const user = { name: this.name, email: this.email, password: this.password , confirmPassword: this.confirmPassword , 
+      qualification: this.qualification, gender: this.gender, dob: this.dob };
     
     if(!this.name || !this.email || !this.password || !this.confirmPassword) {
       alert('Please fill in all fields!');
@@ -64,7 +67,7 @@ validateEmail(email: string): boolean {
         alert('Registration successful!');
         this.router.navigate(['/login']); // Redirect to login page on success
       },
-      
+
       error: (error) => {
         console.error('Registration failed:', error);
         alert('Registration failed!');

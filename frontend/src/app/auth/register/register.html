@@ -8,6 +8,8 @@
 
     <form (ngSubmit)="onRegister()">
 
+      <div class ="input-name-email">
+        
       <div class="input-name">
         <label>Name:</label>
         <input type="text" placeholder="Name" [(ngModel)]="name" name="name" required />
@@ -17,7 +19,10 @@
         <label>Email:</label>
         <input type="email" placeholder="Email" [(ngModel)]="email" name="email" required />
       </div>
+      </div>
 
+      <div class="input-password-details">
+        
       <div class="input-password">
         <label>Password:</label>
         <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required />
@@ -28,6 +33,31 @@
         <input type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword" name="confirmPassword"
           required />
       </div>
+      </div>
+
+      <div class="input-dob-gender">
+      <div class="input-dob">
+        <label>Date of Birth:</label>
+        <input type="date" [(ngModel)]="dob" name="dob" required />
+      </div>
+
+      <div class="input-gender">
+        <label>Gender:</label>
+        <select [(ngModel)]="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    
+      <div class="input-qualification">
+        <label>Qualification:</label>
+        <input type="radio" [(ngModel)]="qualification" name="qualification" value="highschool" required /> High School
+        <input type="radio" [(ngModel)]="qualification" name="qualification" value="bachelor" required /> Bachelor's
+        <input type="radio" [(ngModel)]="qualification" name="qualification" value="master" required /> Master's
+      </div>
 
       <div class="register-btn">
         <button type="submit">Register</button>
@@ -35,7 +65,7 @@
       </div>
 
     </form>
-    
+
   </div>
 
 </div>

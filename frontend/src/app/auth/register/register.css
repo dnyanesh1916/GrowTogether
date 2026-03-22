@@ -9,14 +9,20 @@
     border: 1px solid black;
     border-radius: 5px;
     height: 500px;
-    width: 600px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     gap: 20px;
 }
-.input-name,.input-email,.input-password{
+.input-name-email,.input-password-details,.input-dob-gender{
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+}
+
+.input-name,.input-email,.input-password,.input-qualification,.input-gender,.input-dob{
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;

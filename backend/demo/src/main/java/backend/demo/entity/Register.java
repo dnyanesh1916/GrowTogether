@@ -7,6 +7,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 @Entity
 @Data
 public class Register {
@@ -18,4 +21,7 @@ public class Register {
     private String email;
     private String password;
     private String confirmPassword;
+    private LocalDate dob;
+    private String qualification;
+    private String gender;
 }
