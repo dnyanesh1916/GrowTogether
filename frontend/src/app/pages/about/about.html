@@ -1,4 +1,31 @@
 <div class="main-about">
-    <h1 class="typings">About Us</h1>
-    <p class="typings">GrowTogether is a platform dedicated to fostering collaboration and growth
+  <h1>About Us</h1>
+
+  <div class="frames-container">
+
+    <!-- Frame 1 -->
+    <iframe class="frame"
+      srcdoc='
+        <h3>Login Form</h3>
+        <input type="text" placeholder="Email"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <button onclick="alert(&quot;Login Clicked&quot;)">Login</button>
+      '>
+    </iframe>
+
+    <!-- Frame 2 -->
+    <iframe class="frame"
+      srcdoc='
+        <h3>Register</h3>
+        <input type="text" placeholder="Name"><br><br>
+
+        Gender:<br>
+        <input type="radio" name="g"> Male
+        <input type="radio" name="g"> Female<br><br>
+
+        <button onclick="alert(&quot;Registered&quot;)">Submit</button>
+      '>
+    </iframe>
+
+  </div>
 </div>

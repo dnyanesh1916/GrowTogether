@@ -3,9 +3,20 @@
 }
 .main-about{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: lightpink;
     height: 100%;
     width: 100%;
+}.frames-container {
+  display: flex;
+  gap: 20px;
+}
+
+.frame {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }

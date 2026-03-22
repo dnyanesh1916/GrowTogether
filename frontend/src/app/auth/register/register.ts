@@ -19,7 +19,7 @@ export class Register {
   qualification = '';
   gender = '';
   dob = '';
-
+  
   constructor(private http: HttpClient, private router: Router) {}
 
 
